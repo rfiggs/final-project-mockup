@@ -8,6 +8,35 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/home', {
+  name: 'User_Home_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'User_Home_Page' });
+  },
+});
+
+FlowRouter.route('/new-session', {
+  name: 'Add_Session_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Add_Session_Page' });
+  },
+});
+
+FlowRouter.route('/calendar', {
+  name: 'View_Calendar_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'View_Calendar_Page' });
+  },
+});
+
+FlowRouter.route('/session', {
+  name: 'View_Session_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'View_Session_Page' });
+  },
+});
+
+/*
 FlowRouter.route('/list', {
   name: 'List_Stuff_Page',
   action() {
@@ -21,13 +50,14 @@ FlowRouter.route('/add', {
     BlazeLayout.render('App_Body', { main: 'Add_Stuff_Page' });
   },
 });
-
-FlowRouter.route('/stuff/:_id', {
+*/
+FlowRouter.route('/stuff/', {
   name: 'Edit_Stuff_Page',
   action() {
     BlazeLayout.render('App_Body', { main: 'Edit_Stuff_Page' });
   },
 });
+
 
 FlowRouter.notFound = {
   action() {

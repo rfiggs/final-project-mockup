@@ -8,3 +8,10 @@ import './home-page.html';
 
 import './list-stuff-page.html';
 import './list-stuff-page.js';
+
+import './user-home-page.html';
+
+import './add-session-page.html';
+
+import './view-calendar-page.html';
+import './view-session-page.html';
