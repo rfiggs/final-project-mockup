@@ -1,6 +1,7 @@
 body {
   padding-top: 61px;  /* Move body of page below navbar. */
 }
-.square {
-  border: 1px black;
+.ui.segment.hidden{
+  border:none;
+  box-shadow: none;
 }

@@ -14,4 +14,6 @@ import './user-home-page.html';
 import './add-session-page.html';
 
 import './view-calendar-page.html';
+import './view-calendar-page.js';
+
 import './view-session-page.html';
