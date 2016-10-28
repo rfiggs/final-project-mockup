@@ -17,3 +17,5 @@ import './view-calendar-page.html';
 import './view-calendar-page.js';
 
 import './view-session-page.html';
+
+import './user-profile-page.html';
