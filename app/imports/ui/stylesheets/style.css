@@ -1,3 +1,29 @@
 body {
-  padding-top: 61px;  /* Move body of page below navbar. */
+ /* padding-top: 61px;*/  /* Move body of page below navbar. */
+  background-color:#00aecc;
+  color: #595959;
+
 }
+
+
+.ui.segment, .ui.table{
+  background-color: #fffff5;
+}
+.ui.menu.topmenu {
+  opacity: .5;
+  background-color: black;
+
+}
+.ui.menu.topmenu .item {
+  color: white;
+}
+
+.ui.menu.topmenu .item:hover, .ui.menu.topmenu .active.item{
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+table.ui.striped.table th, table.ui.striped.table tr:nth-child(even) {
+  background-color: #f0f0e9;
+}
+

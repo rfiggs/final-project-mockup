@@ -1,14 +1,13 @@
 <template name="Header">
-    <div class="ui top fixed borderless inverted menu">
-  <div class="ui container">
+  <div class="ui top  borderless menu topmenu">
+    <div class="ui container">
       <a class="item" href="{{pathFor 'Home_Page'}}"><h1>Study Buddy</h1></a>
-      <a href="#" class="item">{{> loginButtons }} </a>
+      <!--<a href="#" class="item">{{> loginButtons }} </a>-->
       <a class="{{ isActiveRoute 'User_Home_Page'}} item" href="{{ pathFor 'User_Home_Page' }}">User Home</a>
       <a class="{{ isActiveRoute 'User_Profile_Page'}} item" href="{{ pathFor 'User_Profile_Page' }}">User Profile</a>
       <a class="{{ isActiveRoute 'Add_Session_Page'}} item" href="{{ pathFor 'Add_Session_Page' }}">Add Session</a>
       <a class="{{ isActiveRoute 'View_Calendar_Page'}} item" href="{{ pathFor 'View_Calendar_Page' }}">Calendar</a>
       <a class="{{ isActiveRoute 'View_Session_Page'}} item" href="{{ pathFor 'View_Session_Page' }}">View Session</a>
-      <a href="#" class = "item"></a>
     </div>
   </div>
 </template>
