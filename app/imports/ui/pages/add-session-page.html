@@ -1,34 +1,40 @@
 <template name="Add_Session_Page">
-<div class="ui centered grid">
-  <div class = "ten wide column">
-  <form class="ui padded segment form add-contact-form {{ errorClass }}">
-    <h class = "ui huge header">New Study Session</h>
-    <div class="ui divider"></div>
-    <label>Class or Topic</label>
-      <div class="required field">
-        <div class="field">
-          <input name="topic" id="topic" placeholder="Class or Topic" type="text">
+  <div class="ui centered grid">
+    <div class="ten wide column">
+      <form class="ui padded left aligned segment form add-session-form">
+        <h class="ui huge header">New Study Session</h>
+        <div class="ui divider"></div>
+        <div class="two fields">
+          <div class="required field">
+            <div class="field">
+              <label>Class or Topic</label>
+              <input name="topic" id="topic" placeholder="Class or Topic" type="text">
+            </div>
+          </div>
+          <div class="field">
+            <label>Professor</label>
+            <input name="professor" id="professor" placeholder="Professor" type="text">
+          </div>
         </div>
-      </div>
-    <label>Professor</label>
-    <div class = "field">
-      <input name="professor" id="professor" placeholder="Professor" type="text">
+        <label>Meeting Time</label>
+        <div class="two fields">
+          <div class="required field">
+            <div class="field">
+              <input name="startTime" id="startTime" placeholder="Starting time" type="text">
+            </div>
+          </div>
+          <div class="required field">
+            <div class="field">
+              <input name="endTime" id="endTime" placeholder="Ending time" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label>Description</label>
+          <textarea rows="3"></textarea>
+        </div>
+        <a href="{{ pathFor 'User_Home_Page'}}" class="ui primary button">Submit</a>
+      </form>
     </div>
-    <label>Meeting Time</label>
-    <div class="two fields">
-      <div class="required field">
-        <div class="field">
-          <input name="startTime" id="startTime" placeholder="Starting time" type="text">
-        </div>
-      </div>
-      <div class="required field">
-        <div class="field">
-          <input name="endTime" id="endTime" placeholder="Ending time" type="text">
-        </div>
-      </div>
-    </div>
-    <a href="{{ pathFor 'User_Home_Page'}}"  class="ui primary button">Submit</a>
-  </form>
   </div>
-</div>
 </template>

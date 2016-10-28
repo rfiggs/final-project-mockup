@@ -1,15 +1,30 @@
 <template name="Home_Page">
-  <div class="ui middle aligned centered grid text container">
+  <div class="ui very padded segment container">
+    <div class="ui grid">
+      <div class="ui two column row">
+        <div class="ui column">
+          <img class="ui fluid rounded image" src="/images/landing_background.jpg"/>
+        </div>
+        <div class="ui center aligned column">
 
-    <div class="row">
-      <img class="ui large rounded  image" src="/images/landing_background.jpg"/>
+          <h1>What is Study Buddy?</h1>
+          <div class="ui divider"></div>
+          <div class = "ui basic text segment">
+            Study Buddy is an application for UHM ICS students to self-organize face-to-face study groups around a course, topic, or project.
+          </div>
+          <div class ="ui basic tiny text segment">
+            <i>
+              note: all study session will be held in ICSpace (POST318B)
+            </i>
+          </div>
+        </div>
+      </div>
+      <div class ="ui hidden divider"></div>
+      <div class = "ui centered row">
+       <div class ="eight wide column">
+         <a class="ui primary large fluid button" href="{{ pathFor 'User_Home_Page' }}">Login!</a>
+       </div>
+      </div>
     </div>
-
-    <div class="eight wide column">
-      <h1>Welcome to Study Buddy!</h1>
-      <p>Please sign in with your UH account</p>
-      <a class="ui primary button" href="{{ pathFor 'User_Home_Page' }}">Login!</a>
-    </div>
-
   </div>
 </template>
